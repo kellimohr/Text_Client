@@ -36,7 +36,7 @@ defmodule TextClient.Player do
         game
         |> Summary.display()
         |> Prompter.accept_move()
-        |> Mover.move()
+        |> Mover.make_move()
         |> play()
     end
 
